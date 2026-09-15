@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Dashboard;
+use App\Livewire\Docs\UserGuide;
 use App\Livewire\Laporan\LaporanPeriode;
 use App\Livewire\Opname\StockForm;
 use App\Livewire\Periode\PeriodePanel;
@@ -14,3 +15,4 @@ Route::get('/stock/{kodeBarang}', StockDetail::class)->name('stock.detail');
 Route::get('/opname', StockForm::class)->name('opname.create');
 Route::get('/laporan', LaporanPeriode::class)->name('laporan.index');
 Route::get('/periode', PeriodePanel::class)->name('periode.index');
+Route::get('/panduan', UserGuide::class)->name('panduan.index');
